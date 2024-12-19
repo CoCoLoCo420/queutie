@@ -188,6 +188,9 @@ body {
     color: greenyellow;
     margin-bottom: 15px;
 }
+.chat {
+    color: greenyellow;
+}
 
 /* Friends Sidebar */
 .friends-sidebar {
