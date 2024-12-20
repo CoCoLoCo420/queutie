@@ -133,6 +133,8 @@ body {
     overflow-y: auto; /* Allow scrolling inside containers */
     box-sizing: border-box; /* Include padding and borders in height */
     min-height: 0; /* Prevent exceeding parent container's height */
+      font-size: 10px;
+      color: greenyellow:
 }
 
 /* Song Queue Section */
