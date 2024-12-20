@@ -133,8 +133,34 @@ body {
     overflow-y: auto; /* Allow scrolling inside containers */
     box-sizing: border-box; /* Include padding and borders in height */
     min-height: 0; /* Prevent exceeding parent container's height */
-      font-size: 10px;
-      color: greenyellow:
+}
+
+
+.chat-style {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding from the list */
+    margin: 20px; /* Add some space around the list */
+    max-width: 600px; /* Set a maximum width for better readability */
+    font-family: Arial, sans-serif; /* Use a clean font */
+    line-height: 1.5; /* Adjust line spacing */
+}
+
+.chat-style li {
+    margin-bottom: 15px; /* Add space between each comment */
+    padding: 10px; /* Add padding for each comment */
+    background-color: #000000; /* Light background for comments */
+    border-radius: 10px; /* Rounded corners for each comment */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.chat-style li:nth-child(odd) {
+    background-color: #394039; /* Alternate background color for odd comments */
+    color: greenyellow;
+}
+
+.chat-style li:nth-child(even) {
+    background-color: #444147; /* Alternate background color for even comments */
+    color: greenyellow;
 }
 
 /* Song Queue Section */
@@ -195,11 +221,6 @@ body {
     border-radius: 10px;
 }
 
-.video-sidebar h2 {
-    text-align: center;
-    color: greenyellow;
-    margin-bottom: 15px;
-}
 .no-bullets {
     display: flex;
     flex-wrap: nowrap;
