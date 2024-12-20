@@ -203,6 +203,7 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: flex-start;
+    overflow-y: auto;
     list-style-type: none;
 
 }
