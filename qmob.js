@@ -94,27 +94,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 c.style.flex = "0.5";
                 c.classList.remove('expanded');
 
-                // Reset flex-wrap for .friends-sidebar children
+                // Reset flex-wrap for .friends-sidebar children and lock scroll on collapse
                 if (c.classList.contains('friends-sidebar')) {
                     const children = c.querySelectorAll(':scope > *');
                     children.forEach(child => {
                         child.style.flexWrap = "nowrap"; // Default state
                     });
+                    c.style.overflowY = "hidden"; // Lock vertical scroll
+                    c.style.overflowX = "auto"; // Allow horizontal scroll
                 }
             });
 
             // Expand the clicked container only if it wasn't already expanded
             if (!isExpanded) {
                 container.style.flex = "5";
-                
+                container.classList.add('expanded');
 
-                // Apply flex-wrap: wrap for .friends-sidebar children
+                // Apply flex-wrap: wrap for .friends-sidebar children and unlock scroll
                 if (container.classList.contains('friends-sidebar')) {
                     const children = container.querySelectorAll(':scope > *');
                     children.forEach(child => {
                         child.style.display = "flex"; // Ensure it's a flex container
                         child.style.flexWrap = "wrap";
                     });
+                    container.style.overflowY = "auto"; // Unlock vertical scroll
+                    container.style.overflowX = "hidden"; // Lock horizontal scroll
                 }
             }
         });
