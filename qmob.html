@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueuTie</title>
+    <link rel="stylesheet" href="./qmob.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h2 class="title">QueuTie</h2>
+        <div class="ham">
+            <a href="#" class="logout" onclick="showLogoutMenu()">Log Out</a>
+        </div>
+    </div>
+    <div id="logout-menu" class="logout-menu hidden">
+        <p>Are you sure you want to log out?</p>
+        <div class="logout-options">
+            <button onclick="confirmLogout()">Yes</button>
+            <button onclick="closeLogoutMenu()">No</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Song Queue Section -->
+        <div class="queue-container">
+            <ul class="song-list" id="song-list">
+                <li>
+                    <img src="./images/Cyr.png" alt="User 1" class="profile-img-online">
+                    <span class="song-info">Don't Be So Seri</span>
+                </li>
+                <li>
+                    <img src="./images/Hassan.jpeg" alt="User 2" class="profile-img-online">
+                    <span class="song-info">Song Title 2 - User2</span>
+                </li>
+                <li>
+                    <img src="./images/Quin.png" alt="User 3" class="profile-img-online">
+                    <span class="song-info">Song Title 3 - User3</span>
+                </li>
+                <li>
+                    <img src="./images/Soda.png" alt="User 4" class="profile-img-online">
+                    <span class="song-info">Song Title 4 - User4</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="video-sidebar"></div>
+
+        <!-- Friends Sidebar -->
+        <div class="friends-sidebar">
+            <ul class="no-bullets" id="friends-list">
+                <li>
+                    <div>
+                        <img src="./images/PirateSoftware.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Fuslie.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/PirateSoftware.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Fuslie.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/PirateSoftware.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Fuslie.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/PirateSoftware.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Fuslie.png" alt="User 2" class="profile-img-online">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Shroud.png" alt="User 2" class="profile-img-offline">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Shroud.png" alt="User 2" class="profile-img-offline">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Shroud.png" alt="User 2" class="profile-img-offline">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Shroud.png" alt="User 2" class="profile-img-offline">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Shroud.png" alt="User 2" class="profile-img-offline">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/Shroud.png" alt="User 2" class="profile-img-offline">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Popup -->
+    
+
+    <!-- Link to External JavaScript -->
+    <script src="./qmob.js"></script>
+</body>
+
+</html>
+
